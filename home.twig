@@ -1,0 +1,281 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+    
+    <div class="global">
+
+        <!--header-->
+        <header>
+
+            <div class="header">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <article class="span12">
+
+                            {{widget('space', 'space', {'height': '40'})|raw}}
+
+                            <ul class="nav">
+                                <li>{{widget('content', 'nav1', {content: '<a href="#">Register</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'nav2', {content: '<a href="#">Login</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'nav3', {content: '<a href="#">Site Map</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'nav4', {content: '<a href="#">Member Area</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'nav5', {content: '<a href="#">Search</a>', lines: 'all'})|raw}}</li>
+                            </ul>
+
+                            {{widget('space', 'space', {'height': '20'})|raw}}
+
+                            <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                            {{widget('space', 'space', {'height': '40'})|raw}}
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="showcase">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+                        <div class="row">
+
+                            <article class="span8">
+
+                                {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': true, 'allowPause': true, 'allowLoop': true, 'images':[{'imageHeight':'431', 'imageWidth':'770', 'url':'http://placehold.it/431x770', 'title':'test title', 'description': 'test desc'},{'imageHeight':'431', 'imageWidth':'770', 'url':'http://placehold.it/431x770', 'title':'test title', 'description': 'test desc'},{'imageHeight':'431', 'imageWidth':'770', 'url':'http://placehold.it/431x770', 'title':'test title', 'description': 'test desc'},{'imageHeight':'431', 'imageWidth':'770', 'url':'http://placehold.it/431x770', 'title':'test title', 'description': 'test desc'}]})|raw}}
+                
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span4">
+
+                                <div class="banner color1">
+                                    {{widget('image', 'banner1', { 'src': asset('images/banner1.jpg'), 'imageWidth': '153px'})|raw}}
+                                    <div class="overflow">
+                                        {{widget('content', 'ban-title1', {content: '<h2>Our</h2>', lines: 'all'})|raw}}
+                                        {{widget('content', 'ban-subtitle1', {content: '<h3>HISTORY</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'ban-text1', {content: 'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor', lines: 'all'})|raw}}
+                                    </div>
+                                </div>
+                                
+                                {{widget('space', 'space', {'height': '14'})|raw}}
+
+                                <div class="banner color2">
+                                    {{widget('image', 'banner2', { 'src': asset('images/banner2.jpg'), 'imageWidth': '153px'})|raw}}
+                                    <div class="overflow">
+                                        {{widget('content', 'ban-title2', {content: '<h2>Our</h2>', lines: 'all'})|raw}}
+                                        {{widget('content', 'ban-subtitle2', {content: '<h3>Events</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'ban-text2', {content: 'Lorem ipsum dolor sit amet conse ctetur adipisicing elit incididunt', lines: 'all'})|raw}}
+                                    </div>
+                                </div>
+                
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="maintop">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+                        {{widget('content', 'title1', {content: '<h3>Today is special offers</h3>', lines: 'all'})|raw}}
+
+                        <div class="row offer">
+
+                            <article class="span3">
+
+                                {{widget('image', 'offer-image1', { 'src': asset('images/page1-img1.jpg'), 'imageWidth': '252px'})|raw}}
+                                {{widget('content', 'offer-title1', {content: '<h5><a href="#">Excepteur sint occaec</a></h5>', lines: 'all'})|raw}}
+                                {{widget('content', 'offer-text1', {content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+
+                            </article>
+
+                            <article class="span3">
+
+                                {{widget('image', 'offer-image2', { 'src': asset('images/page1-img2.jpg'), 'imageWidth': '252px'})|raw}}
+                                {{widget('content', 'offer-title2', {content: '<h5><a href="#">Lorem ipsum dolor sit amet</a></h5>', lines: 'all'})|raw}}
+                                {{widget('content', 'offer-text2', {content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+
+                            </article>
+
+                            <article class="span3">
+
+                                {{widget('image', 'offer-image3', { 'src': asset('images/page1-img3.jpg'), 'imageWidth': '252px'})|raw}}
+                                {{widget('content', 'offer-title3', {content: '<h5><a href="#">Dolor sit amet conse</a></h5>', lines: 'all'})|raw}}
+                                {{widget('content', 'offer-text3', {content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+
+                            </article>
+
+                            <article class="span3">
+
+                                {{widget('image', 'offer-image4', { 'src': asset('images/page1-img4.jpg'), 'imageWidth': '252px'})|raw}}
+                                {{widget('content', 'offer-title4', {content: '<h5><a href="#">Sit amet conse ctetur</a></h5>', lines: 'all'})|raw}}
+                                {{widget('content', 'offer-text4', {content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '50'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--content-->
+
+        <div class="container">
+
+            <div class="row">
+
+                <article class="span12">                    
+
+                    <div class="row offer">
+
+                        <article class="span4">
+
+                            {{widget('content', 'title2', {content: '<h3>Twitter Feed</h3>', lines: 'all'})|raw}}
+                            {{widget('twitter', 'twitter', {'searchKey': 'templatehelpcom', 'searchType': 'username', 'count': '3','refreshTime': '1800000','includeRts': '0'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                            {{widget('button', 'offer-button', {italic: false, text:'Read MOre', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '40'})|raw}}
+
+
+                        </article>
+
+                        <article class="span4">
+
+                            {{widget('content', 'title3', {content: '<h3>Chef is secrets</h3>', lines: 'all'})|raw}}
+
+                            <ul class="sec">
+                                <li>
+                                    {{widget('image', 'sec-image1', { 'src': asset('images/page1-img5.jpg'), 'imageWidth': '101px'})|raw}}
+                                    <div class="overflow">
+                                        {{widget('content', 'sec-title1', {content: '<h5>Culpa qui officia deserunt</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'sec-text1', {content: '<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>', lines: 'all'})|raw}}
+                                    </div>
+                                </li>
+                                <li>
+                                    {{widget('image', 'sec-image2', { 'src': asset('images/page1-img6.jpg'), 'imageWidth': '101px'})|raw}}
+                                    <div class="overflow">
+                                        {{widget('content', 'sec-title2', {content: '<h5>Lorem ipsum dolor sit</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'sec-text2', {content: '<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>', lines: 'all'})|raw}}
+                                    </div>
+                                </li>
+                                <li>
+                                    {{widget('image', 'sec-image3', { 'src': asset('images/page1-img7.jpg'), 'imageWidth': '101px'})|raw}}
+                                    <div class="overflow">
+                                        {{widget('content', 'sec-title3', {content: '<h5>Adipisicing elit sed do</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'sec-text3', {content: '<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>', lines: 'all'})|raw}}
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+                            {{widget('button', 'sec-button', {italic: false, text:'Read MOre', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+
+                            <div class="banner color2">
+                                {{widget('content', 'ban-title3', {content: '<h2>Reservations</h2>', lines: 'all'})|raw}}
+                                {{widget('content', 'ban-text3', {content: '<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt</p>', lines: 'all'})|raw}}
+                                {{widget('content', 'ban-subtitle3', {content: '<h3>+1-800-2345-678</h3>', lines: 'all'})|raw}}
+                            </div>
+                
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            <div class="map">{{widget('map', 'map', {'height': '214', 'zoom': '15', 'address': 'profile'})|raw}}</div>
+
+                        </article>
+
+                    </div>
+
+                    {{zone('main')|raw}}
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <!--footer-->
+        <footer>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <section class="span12">
+
+                        <div class="row">
+
+                            <article class="span8">
+
+                                {{widget('companyname', 'companyname', {"business": "sushi bar"})|raw}}
+                                {{widget('content', 'copyright_copy', {content: '&nbsp;&copy;&nbsp;2013', lines: 'all'})|raw}}
+                                {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span4">
+
+                                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+    
+</div>
+
+{% endblock %}
