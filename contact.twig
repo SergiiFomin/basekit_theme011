@@ -69,36 +69,44 @@
 
                     <div class="row">
 
-                        <article class="span6 map">
+                        <article class="span8 map">
                             
-                            {{widget('content', 'title1', {content: '<h2>stay in touch</h2>', lines: 'all'})|raw}}
-                            
-                            {{widget('map', 'map', {'height': '370', 'zoom': '15', 'address': 'profile'})|raw}}
+                            {{widget('content', 'title1', {content: '<h3>How to Find Us</h3>', lines: 'all'})|raw}}
 
-                            {{widget('space', 'space', {'height': '30'})|raw}}
+                            <div class="row">
+
+                                <article class="span5 map">
+                            
+                                    {{widget('map', 'map', {'height': '370', 'zoom': '15', 'address': 'profile'})|raw}}
+
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                                </article>
+
+                                <article class="span3 address">
+
+                                    {{widget('content', 'text1', {content: '<span class="text">8901 Marmora Road, Glasgow, D04 89GR.</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text2', {content: '<span class="width">Freephone:</span>+1 800 559 6580', lines: 'all'})|raw}}
+                                    {{widget('content', 'text3', {content: '<span class="width">Telephone:</span>+1 959 603 6035', lines: 'all'})|raw}}
+                                    {{widget('content', 'text4', {content: '<span class="width">FAX:</span>+1 504 889 9898', lines: 'all'})|raw}}
+                                    {{widget('content', 'text5', {content: '<p>E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a></p>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text6', {content: '<span class="text">9863 - 9867 Mill Road, Cambridge, MG09 99HT</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text7', {content: '<span class="width">Freephone:</span>+1 800 559 6580', lines: 'all'})|raw}}
+                                    {{widget('content', 'text8', {content: '<span class="width">Telephone:</span>+1 959 603 6035', lines: 'all'})|raw}}
+                                    {{widget('content', 'text9', {content: '<span class="width">FAX:</span>+1 504 889 9898', lines: 'all'})|raw}}
+                                    {{widget('content', 'text10', {content: '<p>E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a></p>', lines: 'all'})|raw}}
+
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                                </article>
+
+                            </div>
 
                         </article>
 
-                        <article class="span3 address">
-
-                            {{widget('content', 'text1', {content: '<span class="text">8901 Marmora Road, Glasgow, D04 89GR.</span>', lines: 'all'})|raw}}
-                            {{widget('content', 'text2', {content: '<span class="width">Freephone:</span>+1 800 559 6580', lines: 'all'})|raw}}
-                            {{widget('content', 'text3', {content: '<span class="width">Telephone:</span>+1 959 603 6035', lines: 'all'})|raw}}
-                            {{widget('content', 'text4', {content: '<span class="width">FAX:</span>+1 504 889 9898', lines: 'all'})|raw}}
-                            {{widget('content', 'text5', {content: '<p>E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a></p>', lines: 'all'})|raw}}
-                            {{widget('content', 'text6', {content: '<span class="text">9863 - 9867 Mill Road, Cambridge, MG09 99HT</span>', lines: 'all'})|raw}}
-                            {{widget('content', 'text7', {content: '<span class="width">Freephone:</span>+1 800 559 6580', lines: 'all'})|raw}}
-                            {{widget('content', 'text8', {content: '<span class="width">Telephone:</span>+1 959 603 6035', lines: 'all'})|raw}}
-                            {{widget('content', 'text9', {content: '<span class="width">FAX:</span>+1 504 889 9898', lines: 'all'})|raw}}
-                            {{widget('content', 'text10', {content: '<p>E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a></p>', lines: 'all'})|raw}}
-
-                            {{widget('space', 'space', {'height': '30'})|raw}}
-
-                        </article>
-
-                        <article class="span3">
+                        <article class="span4">
                             
-                            {{widget('content', 'title2', {content: '<h2>feedback</h2>', lines: 'all'})|raw}}
+                            {{widget('content', 'title2', {content: '<h3>Contact Form</h3>', lines: 'all'})|raw}}
 
                             {{zone('main')|raw}}
 
