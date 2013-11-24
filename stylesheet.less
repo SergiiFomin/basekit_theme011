@@ -674,6 +674,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+
+.widget.logo{
+  text-align: center;
+  div{
+    display: inline;
+  }  
+}
+
 h1{
   font-size: @font-swatch1-font-size;
   font-weight: @font-swatch1-font-weight;
@@ -681,39 +689,6 @@ h1{
   color: @font-swatch1-color;
   font: 58px/60px Times New Roman, Times, serif;
   color: @color-swatch6;
-  &.brand{
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    text-align: center;
-    .companyheader{
-      display: inline-block;
-    }
-    a{
-      color: @color-swatch3;
-      text-decoration: none;
-      position: relative;
-      &:hover{
-        color: @color-swatch1;
-      }
-      .logo{
-        margin: 0px;
-        font-size: 0;
-        line-height: 0;
-        img{
-          display: block;
-        }
-        a{
-          display: inline-block;
-        }   
-      }
-      .company-name{
-        font: 15px/19px Times New Roman, Times, serif;
-        color: #afaca7;
-        letter-spacing: 4px;
-      }
-    }   
-  }
 }
 
 h2{
